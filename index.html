@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .looser {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2016/10/Ulm-GL-1.jpg" alt="">
+
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <p>THIS IS THE GAMe  CREATED USING JAVASCRIPT BASICS</p>
+                            <br>
+                            <h1 class="title is-4"><b>Player One Score: </b> <span style="font-weight: 300;": large; id="p1Display">0</span> vs <b>Player Two Score:
+                                </b><span id="p2Display">0</span>
+                            </h1>
+                            <br>
+                            <div >
+
+                                <label for="select"><b>Select To PLay</b></label>
+
+                                <select name="select" id="playTo">
+
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="content">
+                            <div class="columns is-half ">
+                                <div class="column is-4">
+                                    <button class="button is-primary" id="p1Button"> Player One</button>
+                                </div>
+                                <div class="column is-4">
+                                    <button class="button is-info" id="p2Button"> Player Two</button>
+                                </div>
+                                <div class="column is-2">
+                                    <button class="button is-danger" id="reset">Reset</button>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="message">
+            <div class="message-header">
+              <p>About This Game</p>
+              
+            </div>
+            <div class="message-body">
+              This is the game i created to just practice the JS ,in this game two players will play the game ,who hits the number first is winner,
+              The reset button is used to reset the score of the playeys
+              <b> When the player hit the button once the score is increment by one time,,</b>
+            </div>
+          </article>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
