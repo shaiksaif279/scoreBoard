@@ -4,6 +4,9 @@ const p1Display = document.querySelector("#p1Display");
 const p2Display = document.querySelector("#p2Display");
 const resetButton = document.querySelector("#reset");
 const winingScoreSelect =document.querySelector("#playTo");
+const dButton =document.querySelector('#delete');
+const msgDelete =document.querySelector('.message-body');
+const d =document.querySelector('#demo');
 
 let p1Score = 0;
 let p2Score = 0;
@@ -52,6 +55,11 @@ winingScoreSelect.addEventListener('change',function () {
     winingScore = parseInt(this.value);
     
     reset();
+})
+dButton.addEventlistener('click',function(){
+    msgDelete.remove();
+    d.textContent="pls refresh to get content back";
+
 })
 
 
