@@ -4,7 +4,7 @@ const p1Display = document.querySelector("#p1Display");
 const p2Display = document.querySelector("#p2Display");
 const resetButton = document.querySelector("#reset");
 const winingScoreSelect =document.querySelector("#playTo");
-const dButton =document.querySelector('#delete');
+const dButton =document.querySelector('delete');
 const msgDelete =document.querySelector('.message-body');
 const d =document.querySelector('#demo');
 
